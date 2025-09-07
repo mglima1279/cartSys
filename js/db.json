@@ -1,0 +1,32 @@
+[
+    {
+        "nam": "Gleaner T71",
+        "imgNam": "Gt71.png",
+        "price": 5.88
+    },
+    {
+        "nam": "New Holland CR8.90",
+        "imgNam": "NHcr8.png",
+        "price": 8.62
+    },
+    {
+        "nam": "New Holland CR9.90",
+        "imgNam": "NHcr9.png",
+        "price": 8.94
+    },
+    {
+        "nam": "New Holland CX8.90",
+        "imgNam": "NHcx8.png",
+        "price": 7.66
+    },
+    {
+        "nam": "John Deere S7 900",
+        "imgNam": "s7.png",
+        "price": 8.18
+    },
+    {
+        "nam": "John Deere X9 1100",
+        "imgNam": "x9.png",
+        "price": 11.33
+    }
+]

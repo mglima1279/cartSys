@@ -1,0 +1,140 @@
+body{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--lgray);
+
+    overflow-x: hidden;
+}
+
+header, footer{
+    background-color: var(--black);
+    width: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2vw;
+
+    padding: 1% 0;
+}
+
+main{
+    width: 100%;
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    gap: 1%;
+    padding: 1%;
+    align-items: center;
+}
+
+main .itemsContainer, main .cartContainer{
+    background-color: var(--dgray);
+    
+    border-radius: 1vw;
+
+    padding: 1%;
+
+    height: 75vh;
+}
+
+.itemsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1%;
+    overflow-y: scroll;
+}
+
+.item{
+    aspect-ratio: 1 / 1;
+    background-color: var(--green);
+    border-radius: 1vw;
+
+    transition: filter 0.15s;
+
+    display: grid;
+    grid-template-rows: 80% 1fr;
+}
+.item:hover{
+    filter: brightness(.8);
+}
+
+.item img{
+    border-radius: 1vw;
+
+    width: 100%;
+    aspect-ratio: 1 / .8 !important;
+}
+
+.item div{
+    border-radius: 1vw;
+    
+    font-size: 1cqw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cartContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.title, .sum{
+    font-size: 2cqw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart{
+    flex: 1;
+    overflow-y: scroll;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.cartItem{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: .75cqw;
+}
+
+.cartItem div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20%;
+
+    i{
+        font-size: 2vw;
+        cursor: pointer;
+    }
+}
+
+.cartItem img{
+    width: 15%;
+
+    border-radius: 50%;
+}
