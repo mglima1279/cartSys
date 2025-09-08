@@ -8,7 +8,7 @@ body{
 
     background-color: var(--lgray);
 
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header, footer{
@@ -90,6 +90,7 @@ main .itemsContainer, main .cartContainer{
     align-items: center;
     flex-direction: column;
     gap: 2%;
+    padding: 2% !important;
 }
 
 .title, .sum{
@@ -100,9 +101,18 @@ main .itemsContainer, main .cartContainer{
     justify-content: center;
 }
 
+.title{
+    justify-content: space-between !important;
+}
+
+.title .clearCart{
+    cursor: pointer;
+}
+
 .cart{
     flex: 1;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 100%;
     display: flex;
     align-items: center;

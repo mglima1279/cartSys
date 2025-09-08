@@ -64,7 +64,7 @@ function removeFrom(item){
         cartNames.splice(locIndex, 1);
 
         cart.removeChild(item.htmlEl)
-        item = null        
+        item = null
     }
     saveData();
 }
@@ -105,3 +105,17 @@ function loadData() {
         cartNames.push(el)
     })
 }
+
+document.querySelector(".clearCart").addEventListener("click", () => {
+    
+    cartItems.forEach(item => {
+        let locIndex = cartItems.indexOf(item);
+        cart.removeChild(item.htmlEl)
+        item = null
+    })
+    cartItems = [];
+    cartNames = [];
+    cartsum = 0;
+    result.textContent = cartsum.toFixed(2);
+    saveData()
+})

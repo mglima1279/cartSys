@@ -28,5 +28,55 @@
         "nam": "John Deere X9 1100",
         "imgNam": "x9.png",
         "price": 11.33
+    },
+    {
+        "nam": "Case IH 8250 Axial-Flow",
+        "imgNam": "case8250.png",
+        "price": 9.45
+    },
+    {
+        "nam": "Case IH Magnum 400",
+        "imgNam": "magnum400.png",
+        "price": 6.70
+    },
+    {
+        "nam": "Massey Ferguson IDEAL 9T",
+        "imgNam": "ideal9t.png",
+        "price": 10.25
+    },
+    {
+        "nam": "Massey Ferguson 8S.265",
+        "imgNam": "mf8s265.png",
+        "price": 6.12
+    },
+    {
+        "nam": "Fendt 1050 Vario",
+        "imgNam": "fendt1050.png",
+        "price": 7.88
+    },
+    {
+        "nam": "Claas Lexion 8900",
+        "imgNam": "claas8900.png",
+        "price": 10.75
+    },
+    {
+        "nam": "Valtra T235",
+        "imgNam": "valtraT235.png",
+        "price": 5.95
+    },
+    {
+        "nam": "Kubota M7-172",
+        "imgNam": "kubotaM7.png",
+        "price": 5.33
+    },
+    {
+        "nam": "Challenger MT875E",
+        "imgNam": "challenger875.png",
+        "price": 9.12
+    },
+    {
+        "nam": "Deutz-Fahr 9340 TTV",
+        "imgNam": "deutz9340.png",
+        "price": 6.85
     }
 ]
