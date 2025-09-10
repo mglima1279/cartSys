@@ -21,3 +21,11 @@
 img{
     aspect-ratio: 1/1;
 }
+
+body.dark {
+    background-color: var(--dgray);
+}
+
+.cartContainer.dark, .itemsContainer.dark{
+    background-color: var(--black);
+}

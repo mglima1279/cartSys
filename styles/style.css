@@ -18,11 +18,22 @@ header, footer{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     font-size: 2vw;
 
-    padding: 1% 0;
+    padding: 1%;
+
+    position: relative;
+}
+
+.headerMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5%;
+} .headerMenu i{
+    cursor: pointer;
 }
 
 main{
@@ -30,13 +41,15 @@ main{
     flex: 1;
 
     display: grid;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 1fr 0; /* 30% */
     gap: 1%;
     padding: 1%;
     align-items: center;
+
+    transition: grid-template-columns .2s;
 }
 
-main .itemsContainer, main .cartContainer{
+.itemsContainer, .cartContainer{
     background-color: var(--dgray);
     
     border-radius: 1vw;
@@ -48,8 +61,8 @@ main .itemsContainer, main .cartContainer{
 
 .itemsContainer{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1%;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 1.5%;
     overflow-y: scroll;
 }
 
@@ -62,6 +75,9 @@ main .itemsContainer, main .cartContainer{
 
     display: grid;
     grid-template-rows: 80% 1fr;
+    place-items: center;
+
+    cursor: pointer;
 }
 .item:hover{
     filter: brightness(.8);
@@ -70,27 +86,32 @@ main .itemsContainer, main .cartContainer{
 .item img{
     border-radius: 1vw;
 
-    width: 100%;
+    width: 95%;
     aspect-ratio: 1 / .8 !important;
 }
 
 .item div{
     border-radius: 1vw;
     
-    font-size: 1cqw;
+    font-size: .75cqw;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    gap: 15%;
 
 }
 
 .cartContainer{
-    display: flex;
+    display: none; /* flex */
     align-items: center;
     flex-direction: column;
     gap: 2%;
     padding: 2% !important;
+
+    transition: opacity .2s;
 }
 
 .title, .sum{

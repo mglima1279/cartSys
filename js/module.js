@@ -7,18 +7,18 @@ export class item{
     this.htmlEl = document.createElement("div");  
     this.img = document.createElement("img");
     this.img.src = `./styles/imgs/${this.imgNam}`
-    this.nameSlot = document.createElement("span");
-    this.priceSlot = document.createElement("span");
+    this.nameSlot = document.createElement("div");
+    this.priceSlot = document.createElement("div");
 
     const slotsWrappers = document.createElement("div");
 
 
     this.nameSlot.textContent = this.name;
-    this.priceSlot.textContent = this.price;
+    this.priceSlot.textContent = `X$${this.price}`;
 
     slotsWrappers.appendChild(this.nameSlot);
-    slotsWrappers.innerHTML+="|X$";
     slotsWrappers.appendChild(this.priceSlot);
+    
     this.htmlEl.appendChild(this.img);
     this.htmlEl.appendChild(slotsWrappers);
 

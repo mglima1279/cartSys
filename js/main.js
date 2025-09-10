@@ -77,6 +77,8 @@ function saveData() {
 }
 
 function loadData() {
+    loadTheme();
+
     const savedData = JSON.parse(localStorage.getItem("cartItems"))
     if (!savedData) return;
 
@@ -118,4 +120,30 @@ document.querySelector(".clearCart").addEventListener("click", () => {
     cartsum = 0;
     result.textContent = cartsum.toFixed(2);
     saveData()
+})
+
+import { toggleTheme, loadTheme } from './theme.js';
+
+const switchBtn = document.querySelector('.themeSwitch');
+switchBtn.addEventListener('click', toggleTheme);
+
+const cartSwitch = document.querySelector(".cartI");
+const cartById = document.getElementById("cart")
+const main = document.querySelector("main")
+
+let cartDisplay = false;
+
+cartSwitch.addEventListener("click", ()=>{
+    cartDisplay = !cartDisplay
+    if(cartDisplay){
+        cartById.style.opacity = 1
+        cartById.style.display = "flex"
+        main.style.gridTemplateColumns = "1fr 30%"
+    } else{
+        main.style.gridTemplateColumns = "1fr 0";
+        cartById.style.opacity = 0
+        setTimeout(()=>{
+            cartById.style.display = "none";
+        }, 200)
+    }
 })
